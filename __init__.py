@@ -4,9 +4,9 @@ from flask import Flask
 
 def create_app(test_config=None):
     app = Flask(__name__)
-    # app.config.from_mapping(
-    #     SECRET_KEY=os.environ.get('SECRET_KEY', default='dev'),
-    # )
+    app.config.from_mapping(
+        SECRET_KEY=os.environ.get('SECRET_KEY', default='dev'),
+    )
 
     if test_config is None:
         app.config.from_pyfile('config.py', silent=True)
