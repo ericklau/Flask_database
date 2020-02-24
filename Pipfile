@@ -4,9 +4,10 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
+python-dotenv = "*"
 
 [packages]
 flask = "*"
 
 [requires]
-python_version = "2.7"
+python_version = "3.6"
